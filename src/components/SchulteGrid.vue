@@ -24,12 +24,11 @@
     </div>
 </template>
 
-<script>
-    export default {
-        name: 'hello',
+<script type="text/ecmascript-6">
+    export default  {
+        name: 'SchulteGrid',
         data () {
             return {
-//      Schulte Grid
                 cells: [
                     {num: 1, color: ''},
                     {num: 2, color: ''},
@@ -55,7 +54,7 @@
                 restart: "Restart",
                 seconds: "00:00",
                 time: "",
-                dur:"0",
+                dur: "0",
 
             }
         },
@@ -106,7 +105,7 @@
                 self.time = setInterval(function () {
                     self.dur = parseInt(self.dur) + 1;
                     let mm = Math.floor(self.dur / 60);
-                    if(mm > 60) {
+                    if (mm > 60) {
 
                     }
                     let ss = self.dur % 60;
@@ -115,7 +114,7 @@
             },
             //时间自动补全
             addNum(num){
-                num = num < 10 ? ("0"+num) : num;
+                num = num < 10 ? ("0" + num) : num;
                 return num;
             },
             //点击事件

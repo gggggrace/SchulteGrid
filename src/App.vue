@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello/>
+    <SchulteGrid/>
   </div>
 </template>
 
 <script>
-import Hello from './components/SchulteGrid'
+import SchulteGrid from './components/SchulteGrid'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    SchulteGrid
   }
 }
 </script>
